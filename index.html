@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>   
+    <div class=wrapper>
+        <h3>View Highscores</h3>
+        <div id="time">
+            Time 
+            <div id="count">Start</div>    
+        </div> 
+        <div id="quiz">             
+            <h1>Coding Code Challenges</h1>
+            <hr style="margin-bottom: 40px">
+            <h2 class="time"></h2>
+            <p id="question"></p>
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+        </div>
+    </div>
+    <form id="form"><br>
+            Enter initials:
+            <input type="text" id="name">
+            <button id="submit">submit</button>
+            <br><br>
+            <button id="back">Go back</button>
+    </form>   
+<script src="question.js"></script>
+</body>
+</html>
