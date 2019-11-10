@@ -1,39 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+    <title>Quiz</title>
 </head>
-<body>   
-    <div class=wrapper>
-        <h3>View Highscores</h3>
-        <div id="time">
-            Time 
-            <div id="count">Start</div>    
-        </div> 
-        <div id="quiz">             
-            <h1>Coding Code Challenges</h1>
-            <hr style="margin-bottom: 40px">
-            <h2 class="time"></h2>
-            <p id="question"></p>
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
+<body>
+    <div class="wrapper">
+        <h2>Quiz</h2>
+        <button id="btn">Start</button>
+        <p id="timer">Timer</p>
+        <div id="time"></div>
+        <div class="questions"></div>
+        <div class="ques">
+            <div class="box1">
+                <label class="ques1">Which of the following property specifies the bottom margin of an element?
+                <div class="ans1">
+                        <button id="btn1">Margin</button>
+                        <button id="btn1">Margin-bottom</button>
+                        <button id="btn1">Margin-top</button>
+                </div>
             </div>
+            <div class="box2">
+                <div class="ques2">
+                    <label class="ques2">Which of the following property is used to set the height of an image</label>
+                    <div class="ans2">
+                        <button id="btn1">Border</button>
+                        <button id="btn1">Height</button>
+                        <button id="btn1">Width</button>
+                    </div>
+                </div>
+            </div>
+        <div class="box3">
+                <div class="ques3">
+                    <label class="que3">Which language is used for styling web pages?</label>
+                    <div class="ans3">
+                        <button id="btn1">HTML</button>
+                        <button id="btn1">CSS</button>
+                        <button id="btn1">jQuery</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="ques4">
+                    <label class="que4">Sting values must be enclosed within______when being assigned to variables.</label>
+                    <div class="ans4">
+                        <button id="btn1">Commas</button>
+                        <button id="btn1">Curly brackets</button>
+                        <button id="btn1">Parentheses</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="ques5">
+                    <label class="ques5">Which is not a Javascript Framework?</label>
+                    <div class="ans5">
+                        <button id="btn1">NodeJS</button>
+                        <button id="btn1">Django</button>
+                        <button id="btn1">jQuery</button>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+        <div id="clear"></div>
+        <div id="score">Highscore</div>
+        <div class="ans"></div>
     </div>
     <form id="form"><br>
-            Enter initials:
-            <input type="text" id="name">
-            <button id="submit">submit</button>
-            <br><br>
-            <button id="back">Go back</button>
-    </form>   
-<script src="question.js"></script>
+        Enter initials:
+        <input type="text" id="name">
+        <button id="submit">submit</button>
+        <br><br>
+        <button id="back">Go back</button>
+</form>
+    <script src="script.js">
+      
+    </script>
 </body>
 </html>
